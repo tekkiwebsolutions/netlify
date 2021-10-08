@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import SinglePostData from '../components/SinglePostData/SinglePostData'
+import RelatedPost from '../components/RelatedPost/RelatedPost'
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -10,15 +12,13 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   return (
     <section className="section section--gradient">
       <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
-            </div>
-          </div>
+        <div className="columns SinglePostData">
+        <SinglePostData />
+        </div>
+        <div className='related_post_three_col'>
+        <RelatedPost />
+        <RelatedPost />
+        <RelatedPost />
         </div>
       </div>
     </section>

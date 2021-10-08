@@ -1,0 +1,43 @@
+.SinglePostDetail_top_data h2 {
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+}
+.SinglePostDetail_top_data {
+    display: flex;
+}
+.SinglePostDetail_top_data span {
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: #5D738D;
+display: inline-block;width: 100%;
+}
+.SinglePostDetail_top_title .img_user_date{display: block;}
+.SinglePostDetail_top_data div {
+    width: 100%;
+}
+.SinglePostDetail_top_data .SinglePostDetail_top_title {
+    width: 90%;
+    padding-right: 30px;
+}
+.SinglePostDetail_top_data {
+    padding-top: 70px;
+}
+.SinglePostDetail .socialsharing_txt {
+    width: 70%;
+    margin: 0 auto;
+}
+.SinglePostDetail p {
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 20px;width: 100%;
+}
+.google_ad{width: 70%;display:table;margin:30px auto 50px}

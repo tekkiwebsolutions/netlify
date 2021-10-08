@@ -1,0 +1,24 @@
+.SingleAuthorPost_txt {
+    display: flex;
+    border: 1px solid #EEE;
+    margin-top: 30px;
+    padding: 30px;
+}
+.SingleAuthorPost_txt h2 {
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: #005ab5;
+}
+.SingleAuthorPost_txt p {
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+}
+.SingleAuthorPost_txt img {
+    margin-right: 40px;
+}
