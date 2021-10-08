@@ -1,37 +1,59 @@
 import React from 'react'
 
 import Layout from '../../components/Layout'
-import BlogRoll from '../../components/BlogRoll'
+import SingleAd from '../../components/SingleAd/SingleAd'
+import JustTitlePostDate from '../../components/JustTitlePostDate/JustTitlePostDate'
+import NewsLetterBlock from '../../components/NewsLetterBlock/NewsLetterBlock'
+import './blog.css'
+import TextTitleDate from '../../components/TextTitleDate/TextTitleDate'
+import PrevNextPost from '../../components/PrevNextPost/PrevNextPost'
+import SingleAuthorPost from '../../components/SingleAuthorPost/SingleAuthorPost'
+import RelatedPost from '../../components/RelatedPost/RelatedPost'
+import google_ad from '../../img/google_ad.png'
+import coment from '../../img/coment.png'
+
+
+
 
 export default class BlogIndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <div
-          className="full-width-image-container margin-top-0"
-          style={{
-            backgroundImage: `url('/img/blog-index.jpg')`,
-          }}
-        >
-          <h1
-            className="has-text-weight-bold is-size-1"
-            style={{
-              boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-              backgroundColor: '#f40',
-              color: 'white',
-              padding: '1rem',
-            }}
-          >
-            Latest Stories
-          </h1>
+        <div className='container'>
+         <SingleAd />
+         <div className='trending_truth_row'>
+         <div className='column is-8 trending_truth_left_panel'>
+      <TextTitleDate />
+      <PrevNextPost />     
+      <SingleAuthorPost />
+      <div className='related_post_title'>
+      <div class="Top_News"><h2>Related Posts</h2></div>
+      <div className='cv'>
+      <RelatedPost />
+      <RelatedPost />
+      <RelatedPost />
+      <RelatedPost />
+      </div>
+      </div>
+      <img src={google_ad}  style={{width:'100%'}}/>
+      <img src={coment}  style={{width:'100%', margin: '30px 0 40px 0'}}/>
+         </div>
+         <div className='column is-4 trending_truth_right_panel'>
+         <div class="Top_News"><h2>TopNews</h2></div> 
+         <div className='right_side_bannerAd'>
+        <JustTitlePostDate />
+        <JustTitlePostDate />
+        <SingleAd />
+        <JustTitlePostDate />
+        <JustTitlePostDate />
+        <NewsLetterBlock />
+        <SingleAd />
+     
+        <div className='trending_truth_row_ad_height'><SingleAd /></div>
         </div>
-        <section className="section">
-          <div className="container">
-            <div className="content">
-              <BlogRoll />
-            </div>
-          </div>
-        </section>
+         </div>
+         </div>
+         </div>
       </Layout>
     )
   }

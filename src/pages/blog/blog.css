@@ -1,0 +1,23 @@
+.trending_truth_row_ad_height img {
+    height: 500px;
+    object-fit: cover;
+}
+.trending_truth_row{display: flex;}
+.trending_truth_left_panel {
+    padding-right: 50px;
+}
+.related_post_title .Top_News{
+    font-family: Times New Roman;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 36px;
+}
+.related_post_title h2:after{
+width: 84%;
+top: 20px;
+}
+.cv {
+    columns: 2;
+    display: block;
+}

@@ -1,0 +1,38 @@
+.RelatedPost_data h2 {
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;padding-top: 10px;
+    line-height: 22px;
+}
+.RelatedPost_data img {
+    width: 100%;
+}
+.RelatedPost {
+   padding: 20px;
+}
+.RelatedPost_data p {
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    padding-top: 10px;
+}
+.RelatedPost_data .by_format {
+    margin-left: 0;
+}
+.RelatedPost_data .img_user_date {
+    padding-bottom: 10px;
+}
+.RelatedPost .Top_News {
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+}
+.RelatedPost .Top_News h2::after {
+    width: 84%;
+    top: 20px;
+}
